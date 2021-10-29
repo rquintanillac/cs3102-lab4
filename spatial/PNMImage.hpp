@@ -8,12 +8,12 @@ namespace spatial {
 /**
  * PNMImage implementation
  */
-class PNMImage{
+class PNMImage {
  private:
  public:
- static bool equals(const std::string& left, const std::string& right){
-     return false;
- }
+  static bool equals(const std::string& left, const std::string& right) {
+    return false;
+  }
 };
 
 }  // namespace spatial

@@ -9,13 +9,13 @@ using namespace utec::spatial;
 
 TEST(QuadTest, BasicTest) {
   PRQuadTreeImage qt;
-  qt.load("images/utec.pgm");
-  qt.compress("prueba.qt");
-  qt.decompress("prueba.qt");
-  qt.convertToPGM("images/prueba.pgm");
+  qt.load("../tests/images/utec.pgm");
+  qt.compress("../tests/images/prueba.qt");
+  qt.decompress("../tests/images/prueba.qt");
+  qt.convertToPGM("../tests/images/prueba.pgm");
 
   PNMImage comparator;
-  EXPECT_TRUE(comparator.equals("images/utec.pgm", "images/prueba.pgm"));
+  EXPECT_TRUE(comparator.equals("../tests/images/utec.pgm", "../tests/images/prueba.pgm"));
 }
 
 int main(int argc, char** argv) {
